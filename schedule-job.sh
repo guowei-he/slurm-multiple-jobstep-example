@@ -25,7 +25,7 @@ srun -n 12 bash task.sh 1 10 &
 sleep 1
 srun -n 12 bash task.sh 2 12 &
 
-# Schedule a big job and 2 small jobs. Task 3 will be scheduled last due to the large resource requirement.
+# Schedule a big job and 2 smaller jobs. Task 3 will be scheduled last due to the large resource requirement.
 # Task 4 will be scheduled immediately. Task 5 will be scheduled after task 1.
 sleep 1
 srun -n 55 bash task.sh 3 10 &
